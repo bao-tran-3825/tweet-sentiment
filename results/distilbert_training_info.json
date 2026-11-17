@@ -1,0 +1,14 @@
+{
+  "model": "distilbert-base-uncased",
+  "max_length": 64,
+  "train_tweets": 200000,
+  "epochs": 2,
+  "batch_size_per_gpu": 64,
+  "num_gpus": 2,
+  "gpu": "Tesla T4",
+  "learning_rate": 2e-05,
+  "warmup_steps": 312,
+  "training_minutes": 16.5,
+  "best_validation_accuracy": 0.851,
+  "best_validation_f1": 0.851
+}
