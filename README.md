@@ -37,9 +37,9 @@ I tested each model only once, on the test set it had never seen.
 ## Results
 
 | Model | Test accuracy | Macro F1 | Training time | Prediction time (20K tweets) | Parameters | Size |
-|---|---|---|---|---|---|---|
-| TF-IDF + logistic regression | 0.8063 | 0.8063 | 0.6 s | 0.36 s | 128,537 | 4 MB |
-| DistilBERT (fine-tuned) | **0.8498** | **0.8498** | 16.5 min | 18.1 s | 66,955,010 | ~268 MB |
+|---|---|---|---|------------------------------|---|---|
+| TF-IDF + logistic regression | 0.8063 | 0.8063 | 0.6 s | 0.35 s                       | 128,537 | 4 MB |
+| DistilBERT (fine-tuned) | **0.8498** | **0.8498** | 16.5 min | 18.1 s                       | 66,955,010 | ~268 MB |
 
 The baseline ran on a MacBook Pro (Apple M2 Pro, 32 GB RAM). DistilBERT ran on 2 Tesla T4 GPUs on Kaggle, and predicted with a batch size of 128 and fp16.
 
